@@ -6,6 +6,13 @@
     <title>Folder Manager - Smart Email Organization</title>
     <meta name="description" content="Folder Manager helps businesses streamline email organization, save time, and improve efficiency.">
 
+    <script>
+        // Redirect to www if the user visits the non-www version
+        if (window.location.hostname === "foldermanager.com.au") {
+            window.location.href = "https://www.foldermanager.com.au" + window.location.pathname + window.location.search;
+        }
+    </script>
+
     <style>
         * {
             margin: 0;
