@@ -24,24 +24,14 @@
             padding: 20px;
             text-align: center;
             font-size: 26px;
+            font-weight: bold;
+            text-transform: capitalize;
         }
 
         nav {
             background: #005a9e;
             padding: 15px 0;
             text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 15px 20px;
-            display: inline-block;
-            font-size: 18px;
-        }
-
-        nav a:hover {
-            background: #003f6b;
         }
 
         .hero {
@@ -91,6 +81,7 @@
 
         .features {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin-top: 30px;
         }
@@ -101,6 +92,7 @@
             border-radius: 8px;
             width: 30%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
         }
 
         .feature-box h3 {
@@ -125,51 +117,43 @@
 </head>
 <body>
 
-    <header>
-        Folder Manager - Smart Email Organization
-    </header>
-
-    <nav>
-        <a href="#about">About</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <header style="font-size: 42px;">Folder Manager</header>
 
     <section class="hero">
-        <h1>Revolutionizing Email Folder Management</h1>
-        <p>Organize your emails efficiently and boost your productivity with Folder Manager.</p>
-        <a href="mailto:info@foldermanager.com.au" class="cta-button">Get in Touch</a>
+        <h1>Revolutionizing Email and Folder Management</h1>
+        <p>Enhance efficiency, save costs, and maintain competitiveness in the market with Folder Manager.</p>
+        <a href="mailto:mehdi.toumari@yahoo.com" class="cta-button">Get in Touch</a>
     </section>
 
     <div class="container" id="about">
-        <h2>About Folder Manager</h2>
-        <p>Folder Manager is a comprehensive email organization tool that enhances productivity by automating email sorting, improving search capabilities, and enabling quick access to important messages.</p>
-        <p>Our goal is to help businesses streamline email workflows, reduce clutter, and save valuable time spent on email management.</p>
+        <h2>Main Mission</h2>
+        <p style="font-size: 18px;"><p>Folder Manager is an AI-powered Outlook add-in that simplifies email workflows, reduces manual work, and enhances productivity.</p>
+        <p>Our software automates email listing, advanced filtering, quick folder navigation, and smart email filing.</p>
     </div>
 
     <div class="container" id="features">
         <h2>Key Features</h2>
         <div class="features">
-            <div class="feature-box">
-                <h3>🚀 Automated Email Sorting</h3>
-                <p>Automatically categorize emails into appropriate folders based on content, sender, and priority levels.</p>
-            </div>
-            <div class="feature-box">
-                <h3>🔍 Advanced Search</h3>
-                <p>Locate emails instantly with AI-powered search and customized filtering options.</p>
-            </div>
-            <div class="feature-box">
-                <h3>📂 Quick Folder Access</h3>
-                <p>Navigate through your emails quickly using a well-structured folder management system.</p>
-            </div>
+            <div class="feature-box"><h3>📄 Effortless Email Saving</h3><p>Save emails directly into relevant project folders.</p></div>
+            <div class="feature-box"><h3>📜 Organized Email Listing</h3><p>List emails by date, subject, or discipline.</p></div>
+            <div class="feature-box"><h3>📁 Automated Email Filing</h3><p>Use AI to file emails into discipline-specific folders.</p></div>
+            <div class="feature-box"><h3>🔍 Advanced Search</h3><p>Locate emails by subject, sender, or recipient.</p></div>
+            <div class="feature-box"><h3>📂 Quick Folder Navigation</h3><p>Access frequently used folders quickly.</p></div>
+            <div class="feature-box"><h3>🤖 AI Folder Search</h3><p>Search and open folders across your PC.</p></div>
+            <div class="feature-box"><h3>📥 Email Management</h3><p>Open, delete, or reorganize saved emails.</p></div>
+            <div class="feature-box"><h3>📎 Attachment Organization</h3><p>Save attachments separately for better file management.</p></div>
+            <div class="feature-box"><h3>📤 Bulk Email Management</h3><p>Search and save multiple emails efficiently.</p></div>
+            <div class="feature-box"><h3>🖼️ Latest Drawing Identification</h3><p>AI detects and saves the latest drawings.</p></div>
+            <div class="feature-box"><h3>📊 Report Creation</h3><p>Resize and compile photos into a Word file.</p></div>
+            <div class="feature-box"><h3>🎨 User-Friendly Design</h3><p>Intuitive interface with minimal training needed.</p></div>
         </div>
     </div>
 
     <div class="container" id="contact">
         <h2>Contact Us</h2>
-        <p>For inquiries, reach out to us at:</p>
-        <p><strong>Email:</strong> <a href="mailto:info@foldermanager.com.au">info@foldermanager.com.au</a></p>
-        <p><strong>Website:</strong> <a href="https://foldermanager.com.au">foldermanager.com.au</a></p>
+        <p><strong>Name:</strong> Mehdi Toumari</p>
+        <p><strong>Phone:</strong> 0411182211</p>
+        <p><strong>Email:</strong> <a href="mailto:mehdi.toumari@yahoo.com">mehdi.toumari@yahoo.com</a></p>
     </div>
 
     <footer>
