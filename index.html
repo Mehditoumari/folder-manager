@@ -1,172 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Folder Manager - Smart Email Organization</title>
-    <meta name="description" content="Folder Manager helps businesses streamline email organization, save time, and improve efficiency.">
-
-    <!-- Redirect to WWW -->
-    <script>
-        if (window.location.hostname === "foldermanager.com.au") {
-            window.location.href = "https://foldermanager.com.au" + window.location.pathname + window.location.search;
-        }
-    </script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        header {
-            background-color: #0078d4;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 26px;
-            font-weight: bold;
-            text-transform: capitalize;
-        }
-
-        nav {
-            background: #005a9e;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .hero {
-            background: #0078d4;
-            color: white;
-            text-align: center;
-            padding: 60px 20px;
-        }
-
-        .hero h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: white;
-            color: #0078d4;
-            padding: 15px 25px;
-            font-size: 20px;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-
-        .cta-button:hover {
-            background: #005a9e;
-            color: white;
-        }
-
-        .container {
-            width: 80%;
-            margin: 40px auto;
-            text-align: center;
-        }
-
-        h2 {
-            font-size: 32px;
-            margin-bottom: 15px;
-            color: #0078d4;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 30px;
-        }
-
-        .feature-box {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            width: 30%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
-
-        .feature-box h3 {
-            margin-bottom: 10px;
-            color: #0078d4;
-        }
-
-        .contact {
-            margin-top: 50px;
-            background: #eee;
-            padding: 30px;
-        }
-
-        footer {
-            background: #333;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>FOLDER MANAGER - Smart Email Organization</title>
+  <meta name="description" content="Folder Manager helps businesses streamline email organization, save time, and improve efficiency.">
+  <style>
+:root { --brand:#0078d4; --ink:#222; --bg:#f7f8fa; --card:#fff; --muted:#6b7280; --radius:16px; --shadow:0 8px 24px rgba(0,0,0,.08); }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:var(--ink);background:var(--bg)}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--brand);color:#fff;padding:28px 16px;text-align:center;font-size:40px;font-weight:800;letter-spacing:.2px}
+.hero{background:var(--brand);color:#fff;text-align:center;padding:56px 16px 40px}
+.hero h1{font-size:40px;margin:0 0 10px}
+.hero p{font-size:18px;margin:0 0 18px;color:#eaf4ff}
+.btn{display:inline-block;background:#fff;color:var(--brand);padding:14px 22px;border-radius:10px;font-weight:700;box-shadow:var(--shadow)}
+.btn:hover{background:#f3f7ff}
+.container{max-width:1140px;margin:36px auto;padding:0 16px}
+h2{font-size:28px;margin:6px 0 14px;color:#0f172a}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;text-align:center}
+.card img{
+  max-width:100%;
+  max-height:120px;
+  margin:auto;
+  object-fit:contain;
+  display:block;
+  padding:10px;
+}
+.card .body{padding:14px}
+.card h3{margin:0 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card .footer{padding:12px 14px;border-top:1px solid #eef2f7;display:flex;gap:8px;align-items:center;justify-content:space-between}
+.small{font-size:12px;color:var(--muted)}
+footer{background:#0f172a;color:#fff;text-align:center;padding:18px;margin-top:36px}
+nav{background:#0f172a;color:#fff}
+nav .inner{max-width:1140px;margin:0 auto;padding:10px 16px;display:flex;gap:18px;align-items:center}
+nav a{color:#c7d2fe}
+nav a:hover{color:#fff}
+  </style>
 </head>
 <body>
+  <!-- UPPERCASE MAIN TITLE -->
+  <header>FOLDER MANAGER</header>
 
-    <header style="font-size: 42px;">Folder Manager</header>
+  <nav><div class="inner">
+    <a href="index.html">Home</a>
+    <a href="#about">About</a>
+    <a href="#tutorials">Tutorials</a>
+    <a href="#contact">Contact</a>
+  </div></nav>
 
-    <section class="hero">
-        <h1>Revolutionizing Email and Folder Management</h1>
-        <p>Enhance efficiency, save costs, and maintain competitiveness in the market with Folder Manager.</p>
-        <a href="mailto:mehdi.toumari@yahoo.com" class="cta-button">Get in Touch</a>
-    </section>
+  <section class="hero">
+    <h1>Revolutionizing Email and Folder Management</h1>
+    <p>Enhance efficiency, save costs, and maintain competitiveness in the market with Folder Manager.</p>
+    <a class="btn" href="mailto:mehdi.toumari@yahoo.com">Get in Touch</a>
+  </section>
 
-    <div class="container" id="about">
-        <h2>Main Mission</h2>
-        <p style="font-size: 18px;">Folder Manager is an AI-powered Outlook add-in that simplifies email workflows, reduces manual work, and enhances productivity.</p>
-        <p>Our software automates email listing, advanced filtering, quick folder navigation, and smart email filing.</p>
+  <div class="container" id="about">
+    <h2>Main Mission</h2>
+    <p>Folder Manager is an Outlook add-in that simplifies email workflows, reduces manual work, and enhances productivity. Our software automates email listing, advanced filtering, quick folder navigation, and smart email filing.</p>
+    <!-- Use your real ribbon file here -->
+    <img src="img/folder-manager-ribbon.png" alt="FOLDER MANAGER Ribbon" style="max-width:100%;margin:18px 0;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.08)">
+  </div>
+
+  <div class="container" id="tutorials">
+    <h2>Tutorials</h2>
+    <p class="small">Click any card to open the video in a dedicated page.</p>
+    <div class="grid">
+      <a class="card" href="tutorials/file-emails.html" aria-label="File Emails tutorial">
+        <img src="img/file-emails.png" alt="File Emails thumbnail" loading="lazy" />
+        <div class="body"><h3>File Emails</h3><p>Quickly save selected emails into the right project folder.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
+
+      <a class="card" href="tutorials/list-emails.html" aria-label="List Emails tutorial">
+        <img src="img/list-emails.png" alt="List Emails thumbnail" loading="lazy" />
+        <div class="body"><h3>List Emails</h3><p>List and filter saved emails by date, subject, or discipline.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
+
+      <a class="card" href="tutorials/bulk-search-save-emails.html" aria-label="Bulk Search & Save Emails tutorial">
+        <img src="img/bulk-search-save-emails.png" alt="Bulk Search & Save Emails thumbnail" loading="lazy" />
+        <div class="body"><h3>Bulk Search &amp; Save Emails</h3><p>Batch search and file many emails at once.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
+
+      <a class="card" href="tutorials/access-folder.html" aria-label="Access Folder tutorial">
+        <img src="img/access-folder.png" alt="Access Folder thumbnail" loading="lazy" />
+        <div class="body"><h3>Access Folder</h3><p>Jump straight to frequently used folders.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
+
+      <a class="card" href="tutorials/latest-drawings.html" aria-label="Latest Drawings tutorial">
+        <img src="img/latest-drawings.png" alt="Latest Drawings thumbnail" loading="lazy" />
+        <div class="body"><h3>Latest Drawings</h3><p>Detect and save the latest drawing revisions.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
+
+      <a class="card" href="tutorials/prompt-preference.html" aria-label="Prompt Preference tutorial">
+        <img src="img/prompt-preference.png" alt="Prompt Preference thumbnail" loading="lazy" />
+        <div class="body"><h3>Prompt Preference</h3><p>Customize prompts and defaults to speed up workflows.</p></div>
+        <div class="footer"><span>Watch tutorial</span><span class="small">MP4</span></div>
+      </a>
     </div>
+  </div>
 
-    <div class="container" id="features">
-        <h2>Key Features</h2>
-        <div class="features">
-            <div class="feature-box"><h3>📄 Effortless Email Saving</h3><p>Save emails directly into relevant project folders.</p></div>
-            <div class="feature-box"><h3>📜 Organized Email Listing</h3><p>List emails by date, subject, or discipline.</p></div>
-            <div class="feature-box"><h3>📁 Automated Email Filing</h3><p>Use AI to file emails into discipline-specific folders.</p></div>
-            <div class="feature-box"><h3>🔍 Advanced Search</h3><p>Locate emails by subject, sender, or recipient.</p></div>
-            <div class="feature-box"><h3>📂 Quick Folder Navigation</h3><p>Access frequently used folders quickly.</p></div>
-            <div class="feature-box"><h3>🤖 AI Folder Search</h3><p>Search and open folders across your PC.</p></div>
-            <div class="feature-box"><h3>📥 Email Management</h3><p>Open, delete, or reorganize saved emails.</p></div>
-            <div class="feature-box"><h3>📎 Attachment Organization</h3><p>Save attachments separately for better file management.</p></div>
-            <div class="feature-box"><h3>📤 Bulk Email Management</h3><p>Search and save multiple emails efficiently.</p></div>
-            <div class="feature-box"><h3>🖼️ Latest Drawing Identification</h3><p>AI detects and saves the latest drawings.</p></div>
-            <div class="feature-box"><h3>📊 Report Creation</h3><p>Resize and compile photos into a Word file.</p></div>
-            <div class="feature-box"><h3>🎨 User-Friendly Design</h3><p>Intuitive interface with minimal training needed.</p></div>
-        </div>
-    </div>
+  <div class="container" id="contact">
+    <h2>Contact</h2>
+    <p><strong>Name:</strong> Mehdi Toumari</p>
+    <p><strong>Phone:</strong> 0411 182 211</p>
+    <p><strong>Email:</strong> <a href="mailto:mehdi.toumari@yahoo.com">mehdi.toumari@yahoo.com</a></p>
+  </div>
 
-    <div class="container" id="contact">
-        <h2>Contact Us</h2>
-        <p><strong>Name:</strong> Mehdi Toumari</p>
-        <p><strong>Phone:</strong> 0411182211</p>
-        <p><strong>Email:</strong> <a href="mailto:mehdi.toumari@yahoo.com">mehdi.toumari@yahoo.com</a></p>
-    </div>
-
-    <footer>
-        &copy; 2025 Folder Manager. All rights reserved.
-    </footer>
-
+  <footer>&copy; 2025 FOLDER MANAGER. All rights reserved.</footer>
 </body>
 </html>
